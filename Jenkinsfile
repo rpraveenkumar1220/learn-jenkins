@@ -3,10 +3,6 @@ pipeline {
         node { label 'workstation' }
         }
 
-    environment {
-                    SSH_CREDENTIAL = credentials('SSH')
-                }
-
     options {
             ansiColor('xterm')
         }
