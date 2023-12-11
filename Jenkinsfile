@@ -6,7 +6,7 @@ pipeline {
         ansiColor('xterm')
             }
     environment {
-        SSH_CREDENTIALS = credentials('SSH')
+        SSH = credentials('SSH')
                 }
     parameters {
         string(name: 'Praveen', defaultValue: '', description: 'Do you wish to continue?')
