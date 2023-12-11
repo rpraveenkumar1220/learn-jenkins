@@ -5,9 +5,6 @@ pipeline {
     options {
           ansiColor('xterm')
       }
-    environment {
-        EXAMPLE_KEY = 'SECRET'
-      }
 
     stages {
         stage('Stage1') {
@@ -15,7 +12,7 @@ pipeline {
             steps {
 
                 echo 'Hi there '
-                echo environment
+
                   }
             }
         stage('Stage 2 ') {
