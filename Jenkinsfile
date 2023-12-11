@@ -6,7 +6,7 @@ pipeline {
           ansiColor('xterm')
       }
     environment {
-        EXAMPLE_KEY = credentials('SSH_USR') // Secret value is 'sec%ret'
+        EXAMPLE_KEY = 'SECRET'
       }
 
     stages {
@@ -15,7 +15,7 @@ pipeline {
             steps {
 
                 echo 'Hi there '
-                sh 'env'
+                echo $EXAMPLE_KEY
                   }
             }
         stage('Stage 2 ') {
