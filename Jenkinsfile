@@ -1,8 +1,21 @@
 pipeline {
-    agent { node { label 'workstation' } }
+    agent {
+        node { label 'workstation' }
+        }
+
+    environment {
+                    SSH_CREDENTIAL = credentials('SSH')
+                }
+
+    options {
+            ansiColor('xterm')
+        }
 
     stages {
         stage('Stage1') {
+        parameters {
+                string(name: 'Praveen', defaultValue: 'User', description: 'Wish to continue?')
+            }
             steps {
                 echo 'Hi there '
                   }
