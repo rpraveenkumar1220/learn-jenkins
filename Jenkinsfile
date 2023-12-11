@@ -13,10 +13,11 @@ pipeline {
 
     stages {
         stage('Stage1') {
-        parameters {
-                string(name: 'Praveen', defaultValue: 'User', description: 'Wish to continue?')
-           }
+
             steps {
+            parameters {
+                            string(name: 'Praveen', defaultValue: 'User', description: 'Wish to continue?')
+                       }
                 echo 'Hi there '
                   }
             }
