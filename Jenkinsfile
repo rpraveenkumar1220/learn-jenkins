@@ -3,12 +3,6 @@ pipeline {
         node { label 'workstation' }
         }
 
-    options {
-            ansiColor('xterm')
-        }
-        parameters {
-                                    string(name: 'Praveen', defaultValue: 'User', description: 'Wish to continue?')
-                               }
 
     stages {
         stage('Stage1') {
