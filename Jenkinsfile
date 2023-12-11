@@ -2,7 +2,7 @@ pipeline {
     agent {
         node { label 'workstation' }
         }
-
+ansiColor('xterm'){
     stages {
         stage('Stage1') {
 
@@ -22,4 +22,5 @@ pipeline {
             }
         }
      }
+}
 }
