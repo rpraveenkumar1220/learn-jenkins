@@ -15,7 +15,7 @@ pipeline {
             steps {
 
                 echo 'Hi there '
-                echo $EXAMPLE_KEY
+                echo environment
                   }
             }
         stage('Stage 2 ') {
