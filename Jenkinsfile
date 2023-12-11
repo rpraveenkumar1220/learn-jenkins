@@ -6,7 +6,7 @@ pipeline {
           ansiColor('xterm')
       }
     environment {
-        EXAMPLE_KEY = credentials('example-credentials-id') // Secret value is 'sec%ret'
+        EXAMPLE_KEY = credentials(SSH) // Secret value is 'sec%ret'
       }
 
     stages {
