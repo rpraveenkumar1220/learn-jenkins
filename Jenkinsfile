@@ -5,6 +5,9 @@ pipeline {
     options {
           ansiColor('xterm')
       }
+    environment {
+           SSH_CREDENTIALS = credentials('SSH')
+      }
 
     stages {
         stage('Stage1') {
@@ -12,6 +15,7 @@ pipeline {
             steps {
 
                 echo 'Hi there '
+                echo 'env'
                   }
             }
         stage('Stage 2 ') {
