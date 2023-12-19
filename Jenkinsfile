@@ -1,15 +1,13 @@
 pipeline {
     agent { node { label 'workstation' } }
-    environment {
-         SSH = credentials('SSH')
-                }
+
     stages {
         stage('Stage1') {
 
             steps {
 
                 echo 'Hi there'
-                sh 'echo environment'
+                sh 'echo env'
 
 
                   }
