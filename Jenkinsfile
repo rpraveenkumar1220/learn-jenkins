@@ -1,7 +1,7 @@
 pipeline {
     agent { node { label 'workstation' } }
      environment {
-                    SSH_USR = credentials('SSH_USR')
+                    SSH_USR = credentials('SSH')
                 }
 
     stages {
