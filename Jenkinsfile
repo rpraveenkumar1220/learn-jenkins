@@ -8,7 +8,8 @@ pipeline {
 
             steps {
 
-                echo 'Hi there '
+                echo 'Hi there'
+                sh 'echo environment'
 
 
                   }
