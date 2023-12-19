@@ -9,7 +9,7 @@ pipeline {
             steps {
 
                 echo 'Hi there '
-                sh 'env'
+
 
                   }
             }
