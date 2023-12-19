@@ -1,7 +1,5 @@
 pipeline {
     agent { node { label 'workstation' } }
-    options { ansiColor('xterm') }
-    triggers { pollSCM('H/2 * * * *') }
 
     stages {
         stage('Stage1') {
